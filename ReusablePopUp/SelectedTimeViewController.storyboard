@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Select Time"/>
                                 <connections>
-                                    <segue destination="0PW-eZ-c0k" kind="presentation" id="rJ3-Vz-eCW"/>
+                                    <action selector="selectTime_TouchUpInside:" destination="eRf-AO-2lg" eventType="touchUpInside" id="Jbe-gu-nbl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tU-OG-w0F">
@@ -43,14 +43,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sO7-UO-FSA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="116" y="160.56971514242881"/>
-        </scene>
-        <!--DatePopupViewController-->
-        <scene sceneID="UiP-RK-LLO">
-            <objects>
-                <viewControllerPlaceholder storyboardName="DatePopupViewController" id="0PW-eZ-c0k" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yY1-Dt-gOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="808" y="160"/>
         </scene>
     </scenes>
 </document>

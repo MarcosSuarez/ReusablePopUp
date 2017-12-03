@@ -15,6 +15,8 @@
 		17BF28131FD3DF1000B2091A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17BF28111FD3DF1000B2091A /* LaunchScreen.storyboard */; };
 		17BF281B1FD3E13800B2091A /* DatePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BF281A1FD3E13800B2091A /* DatePopUpViewController.swift */; };
 		17BF281E1FD3E68100B2091A /* DatePopupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17BF281C1FD3E68100B2091A /* DatePopupViewController.storyboard */; };
+		17BF28201FD3E7BC00B2091A /* SelectedTimeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17BF281F1FD3E7BC00B2091A /* SelectedTimeViewController.storyboard */; };
+		17BF28221FD3E7EE00B2091A /* SelectTimeViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BF28211FD3E7EE00B2091A /* SelectTimeViewControllerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		17BF28141FD3DF1000B2091A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		17BF281A1FD3E13800B2091A /* DatePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePopUpViewController.swift; sourceTree = "<group>"; };
 		17BF281D1FD3E68100B2091A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ReusablePopUp/Base.lproj/DatePopupViewController.storyboard; sourceTree = "<group>"; };
+		17BF281F1FD3E7BC00B2091A /* SelectedTimeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectedTimeViewController.storyboard; sourceTree = "<group>"; };
+		17BF28211FD3E7EE00B2091A /* SelectTimeViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimeViewControllerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +68,10 @@
 				17BF28081FD3DF1000B2091A /* FirstViewController.swift */,
 				17BF280A1FD3DF1000B2091A /* SecondViewController.swift */,
 				17BF281A1FD3E13800B2091A /* DatePopUpViewController.swift */,
+				17BF28211FD3E7EE00B2091A /* SelectTimeViewControllerViewController.swift */,
 				17BF280C1FD3DF1000B2091A /* Main.storyboard */,
 				17BF281C1FD3E68100B2091A /* DatePopupViewController.storyboard */,
+				17BF281F1FD3E7BC00B2091A /* SelectedTimeViewController.storyboard */,
 				17BF280F1FD3DF1000B2091A /* Assets.xcassets */,
 				17BF28111FD3DF1000B2091A /* LaunchScreen.storyboard */,
 				17BF28141FD3DF1000B2091A /* Info.plist */,
@@ -133,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17BF28131FD3DF1000B2091A /* LaunchScreen.storyboard in Resources */,
+				17BF28201FD3E7BC00B2091A /* SelectedTimeViewController.storyboard in Resources */,
 				17BF28101FD3DF1000B2091A /* Assets.xcassets in Resources */,
 				17BF281E1FD3E68100B2091A /* DatePopupViewController.storyboard in Resources */,
 				17BF280E1FD3DF1000B2091A /* Main.storyboard in Resources */,
@@ -148,6 +155,7 @@
 			files = (
 				17BF280B1FD3DF1000B2091A /* SecondViewController.swift in Sources */,
 				17BF281B1FD3E13800B2091A /* DatePopUpViewController.swift in Sources */,
+				17BF28221FD3E7EE00B2091A /* SelectTimeViewControllerViewController.swift in Sources */,
 				17BF28071FD3DF1000B2091A /* AppDelegate.swift in Sources */,
 				17BF28091FD3DF1000B2091A /* FirstViewController.swift in Sources */,
 			);

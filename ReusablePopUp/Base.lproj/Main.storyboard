@@ -62,6 +62,16 @@
             </objects>
             <point key="canvasLocation" x="749.60000000000002" y="-320.68965517241384"/>
         </scene>
+        <!--SelectedTimeViewController-->
+        <scene sceneID="wsg-k3-hdL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SelectedTimeViewController" id="k6V-FT-lnR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="3xc-mk-5eb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qMD-qu-Bbl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="558"/>
+        </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
@@ -126,6 +136,7 @@
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="k6V-FT-lnR" kind="relationship" relationship="viewControllers" id="8di-53-8Yj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>

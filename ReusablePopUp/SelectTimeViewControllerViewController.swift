@@ -19,11 +19,15 @@ class SelectTimeViewControllerViewController: UIViewController {
 
     @IBAction func selectTime_TouchUpInside(_ sender: UIButton) {
         
+        // 1.- Selecciona la escena.
+        
         // Bundle representa el proyecto, si lo ponemos a nil el utiliza el bundle donde se encuentra.
         let sb = UIStoryboard(name: "DatePopupViewController", bundle: nil)
         
-        // Scene
-        let popup = sb.instantiateInitialViewController()!
+        // 2.- Le indico cree una instancia de la escena y le indico el tipo de ViewController que espero.
+        let popup = sb.instantiateInitialViewController() as! DatePopUpViewController
+        
+        popup.showTimePicker = true
         
         self.present(popup, animated: true)
     }

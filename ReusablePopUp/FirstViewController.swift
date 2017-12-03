@@ -15,9 +15,16 @@ class FirstViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // MARK: Navegation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "toDatePopupViewControllerSegue" {
+            
+            let popup = segue.destination as! DatePopUpViewController
+            popup.showTimePicker = false
+            
+        }
     }
 
 

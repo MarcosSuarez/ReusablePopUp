@@ -13,6 +13,7 @@
 		17BF280E1FD3DF1000B2091A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17BF280C1FD3DF1000B2091A /* Main.storyboard */; };
 		17BF28101FD3DF1000B2091A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17BF280F1FD3DF1000B2091A /* Assets.xcassets */; };
 		17BF28131FD3DF1000B2091A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17BF28111FD3DF1000B2091A /* LaunchScreen.storyboard */; };
+		17BF281B1FD3E13800B2091A /* DatePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BF281A1FD3E13800B2091A /* DatePopUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		17BF280F1FD3DF1000B2091A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17BF28121FD3DF1000B2091A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17BF28141FD3DF1000B2091A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17BF281A1FD3E13800B2091A /* DatePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePopUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				17BF28061FD3DF1000B2091A /* AppDelegate.swift */,
 				17BF28081FD3DF1000B2091A /* FirstViewController.swift */,
 				17BF280A1FD3DF1000B2091A /* SecondViewController.swift */,
+				17BF281A1FD3E13800B2091A /* DatePopUpViewController.swift */,
 				17BF280C1FD3DF1000B2091A /* Main.storyboard */,
 				17BF280F1FD3DF1000B2091A /* Assets.xcassets */,
 				17BF28111FD3DF1000B2091A /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				17BF280B1FD3DF1000B2091A /* SecondViewController.swift in Sources */,
+				17BF281B1FD3E13800B2091A /* DatePopUpViewController.swift in Sources */,
 				17BF28071FD3DF1000B2091A /* AppDelegate.swift in Sources */,
 				17BF28091FD3DF1000B2091A /* FirstViewController.swift in Sources */,
 			);

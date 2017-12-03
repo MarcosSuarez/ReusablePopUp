@@ -47,10 +47,10 @@
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
-        <!--View Controller-->
+        <!--Date Pop Up View Controller-->
         <scene sceneID="zdK-FN-M98">
             <objects>
-                <viewController id="pe2-bn-MQ0" sceneMemberID="viewController">
+                <viewController id="pe2-bn-MQ0" customClass="DatePopUpViewController" customModule="ReusablePopUp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nSa-XJ-M7g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,6 +75,9 @@
                                         <rect key="frame" x="82" y="190" width="76" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                                         <state key="normal" title="Save Date"/>
+                                        <connections>
+                                            <action selector="saveDate_TouchUpInside:" destination="pe2-bn-MQ0" eventType="touchUpInside" id="Sn2-le-zPB"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -83,6 +86,11 @@
                         <color key="backgroundColor" red="0.82318652849740936" green="0.82318652849740936" blue="0.82318652849740936" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Hw2-mM-AZY"/>
                     </view>
+                    <connections>
+                        <outlet property="datePicker" destination="zvm-R7-bYy" id="BOM-WQ-EqK"/>
+                        <outlet property="saveButton" destination="wey-aL-cS1" id="Zbr-Eg-FZK"/>
+                        <outlet property="titleLabel" destination="z3r-lA-M0g" id="oOP-OT-WTv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hIw-MF-pZd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

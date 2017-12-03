@@ -17,6 +17,7 @@
 		17BF281E1FD3E68100B2091A /* DatePopupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17BF281C1FD3E68100B2091A /* DatePopupViewController.storyboard */; };
 		17BF28201FD3E7BC00B2091A /* SelectedTimeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17BF281F1FD3E7BC00B2091A /* SelectedTimeViewController.storyboard */; };
 		17BF28221FD3E7EE00B2091A /* SelectTimeViewControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BF28211FD3E7EE00B2091A /* SelectTimeViewControllerViewController.swift */; };
+		17BF28241FD3F58900B2091A /* NotificationNameExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BF28231FD3F58900B2091A /* NotificationNameExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		17BF281D1FD3E68100B2091A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = ReusablePopUp/Base.lproj/DatePopupViewController.storyboard; sourceTree = "<group>"; };
 		17BF281F1FD3E7BC00B2091A /* SelectedTimeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectedTimeViewController.storyboard; sourceTree = "<group>"; };
 		17BF28211FD3E7EE00B2091A /* SelectTimeViewControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTimeViewControllerViewController.swift; sourceTree = "<group>"; };
+		17BF28231FD3F58900B2091A /* NotificationNameExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationNameExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				17BF280F1FD3DF1000B2091A /* Assets.xcassets */,
 				17BF28111FD3DF1000B2091A /* LaunchScreen.storyboard */,
 				17BF28141FD3DF1000B2091A /* Info.plist */,
+				17BF28231FD3F58900B2091A /* NotificationNameExtension.swift */,
 			);
 			path = ReusablePopUp;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				17BF280B1FD3DF1000B2091A /* SecondViewController.swift in Sources */,
 				17BF281B1FD3E13800B2091A /* DatePopUpViewController.swift in Sources */,
 				17BF28221FD3E7EE00B2091A /* SelectTimeViewControllerViewController.swift in Sources */,
+				17BF28241FD3F58900B2091A /* NotificationNameExtension.swift in Sources */,
 				17BF28071FD3DF1000B2091A /* AppDelegate.swift in Sources */,
 				17BF28091FD3DF1000B2091A /* FirstViewController.swift in Sources */,
 			);

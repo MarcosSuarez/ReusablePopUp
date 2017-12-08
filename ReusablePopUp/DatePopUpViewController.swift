@@ -21,7 +21,8 @@ class DatePopUpViewController: UIViewController {
     // Option 3.- CallBacks
     var onSave: ((_ data: String) -> ())?
     
-    
+    // Implemente protocol
+    var delegate: PopupDelegate?
     
     // Return string with Date.
     var formattedDate: String {
@@ -59,8 +60,10 @@ class DatePopUpViewController: UIViewController {
         // Option 3.- CallBack
         if showTimePicker {
             onSave?(formattedTime)
+            delegate?.popupValueSelected(value: formattedTime)
         } else {
             onSave?(formattedDate)
+            delegate?.popupValueSelected(value: formattedDate)
         }
         
         

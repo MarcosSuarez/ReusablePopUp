@@ -10,6 +10,9 @@ import UIKit
 
 class SelectTimeViewControllerViewController: UIViewController {
 
+    @IBOutlet weak var timeLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,9 +31,17 @@ class SelectTimeViewControllerViewController: UIViewController {
         let popup = sb.instantiateInitialViewController() as! DatePopUpViewController
         
         popup.showTimePicker = true
-        
+        popup.delegate = self
         self.present(popup, animated: true)
     }
     
+}
+
+
+
+extension SelectTimeViewControllerViewController: PopupDelegate{
     
+    func popupValueSelected(value: String) {
+        timeLabel.text = value
+    }
 }

@@ -27,7 +27,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tU-OG-w0F">
-                                <rect key="frame" x="16" y="24" width="42" height="21"/>
+                                <rect key="frame" x="16" y="24" width="142" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -58,6 +58,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="recents" id="kXV-VB-8gS"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="timeLabel" destination="6tU-OG-w0F" id="ktg-Vz-bbn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sO7-UO-FSA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

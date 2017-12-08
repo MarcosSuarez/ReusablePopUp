@@ -18,6 +18,11 @@ class DatePopUpViewController: UIViewController {
     // Show time is true else it show date
     var showTimePicker: Bool = false
     
+    // Option 3.- CallBacks
+    var onSave: ((_ data: String) -> ())?
+    
+    
+    
     // Return string with Date.
     var formattedDate: String {
         get {
@@ -50,6 +55,15 @@ class DatePopUpViewController: UIViewController {
     @IBAction func saveDate_TouchUpInside(_ sender: UIButton) {
         
         NotificationCenter.default.post(name: .saveDateTime, object: self)
+        
+        // Option 3.- CallBack
+        if showTimePicker {
+            onSave?(formattedTime)
+        } else {
+            onSave?(formattedDate)
+        }
+        
+        
         dismiss(animated: true)
     }
     

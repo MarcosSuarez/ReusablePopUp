@@ -12,35 +12,33 @@ class SecondViewController: UIViewController {
 
     @IBOutlet weak var dateLabel: UILabel!
     
-    var observer: NSObjectProtocol?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-        // Se llama a la noticifación cada vez que aparece la vista para evitar un memory leak debemos eliminar la notificación cuando la vista desaparezca.
-        
-        // addObserver es conforme al protocolo NSObjectProtocol por ello creamos una variable que guarde la información del protocolo
-        
-        // Option 2.-
-        observer = NotificationCenter.default.addObserver(forName: .saveDateTime, object: nil, queue: OperationQueue.main) { (notification) in
-            let dateVC = notification.object as! DatePopUpViewController
-            self.dateLabel.text = dateVC.formattedDate
-        }
-    }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        super.viewDidDisappear(animated)
+    // MARK: Navegation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        // Remove the observer
-        if let observer = observer {
-            NotificationCenter.default.removeObserver(observer)
+        if segue.identifier == "toDatePopupViewControllerSegue" {
+            
+            let popup = segue.destination as! DatePopUpViewController
+            popup.showTimePicker = false
+            
+            // Option 3.- CallBacks
+            
+//            // case A: Assign to a function
+//            popup.onSave = onSave
+            
+            // case B: Using Clousere
+            popup.onSave = {  (data) in
+                self.dateLabel.text = data
+            }
+            
         }
     }
 
-
+//    // case A: Assign to a function
+//    func onSave(_ data: String) -> () {
+//        dateLabel.text = data
+//    }
 }
 

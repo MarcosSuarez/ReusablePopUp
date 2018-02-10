@@ -18,17 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNr-kW-ZCa">
-                                <rect key="frame" x="248" y="20" width="111" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNr-kW-ZCa">
+                                <rect key="frame" x="278" y="20" width="81" height="30"/>
                                 <state key="normal" title="Select Time"/>
                                 <connections>
                                     <action selector="selectTime_TouchUpInside:" destination="eRf-AO-2lg" eventType="touchUpInside" id="Jbe-gu-nbl"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tU-OG-w0F">
-                                <rect key="frame" x="16" y="24" width="142" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6tU-OG-w0F">
+                                <rect key="frame" x="16" y="24" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,8 +48,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vg4-sC-Xms" firstAttribute="top" secondItem="4yX-ws-1ho" secondAttribute="bottom" constant="8" symbolic="YES" id="1Sv-SG-6yb"/>
+                            <constraint firstItem="6tU-OG-w0F" firstAttribute="leading" secondItem="ynW-Ql-9Om" secondAttribute="leading" constant="16" id="2Xc-Cy-rmq"/>
                             <constraint firstItem="4yX-ws-1ho" firstAttribute="centerX" secondItem="ynW-Ql-9Om" secondAttribute="centerX" id="VgN-9H-KGn"/>
                             <constraint firstItem="4yX-ws-1ho" firstAttribute="centerY" secondItem="ynW-Ql-9Om" secondAttribute="centerY" id="b1j-1U-75i"/>
+                            <constraint firstItem="ynW-Ql-9Om" firstAttribute="trailing" secondItem="VNr-kW-ZCa" secondAttribute="trailing" constant="16" id="jAe-UX-zIZ"/>
+                            <constraint firstItem="6tU-OG-w0F" firstAttribute="top" secondItem="ynW-Ql-9Om" secondAttribute="top" constant="4" id="o3m-kM-hSa"/>
+                            <constraint firstItem="VNr-kW-ZCa" firstAttribute="top" secondItem="ynW-Ql-9Om" secondAttribute="top" id="qim-AO-4pf"/>
                             <constraint firstItem="vg4-sC-Xms" firstAttribute="centerX" secondItem="4yX-ws-1ho" secondAttribute="centerX" id="ujS-Gp-Hjs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ynW-Ql-9Om"/>

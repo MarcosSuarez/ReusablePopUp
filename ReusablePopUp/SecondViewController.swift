@@ -40,5 +40,9 @@ class SecondViewController: UIViewController {
 //    func onSave(_ data: String) -> () {
 //        dateLabel.text = data
 //    }
+    
+    deinit {
+        print("Calls Backs ViewController was de-initialized")
+    }
 }
 

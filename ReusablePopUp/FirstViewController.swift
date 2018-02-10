@@ -62,6 +62,8 @@ class FirstViewController: UIViewController {
         }
     }
 
-
+    deinit {
+        print("NotificationViewController was de-initialized")
+    }
 }
 

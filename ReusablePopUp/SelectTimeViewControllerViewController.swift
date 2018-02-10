@@ -35,6 +35,10 @@ class SelectTimeViewControllerViewController: UIViewController {
         self.present(popup, animated: true)
     }
     
+    deinit {
+        print("DelegationViewController was de-initialized")
+    }
+    
 }
 
 

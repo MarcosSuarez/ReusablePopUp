@@ -70,4 +70,8 @@ class DatePopUpViewController: UIViewController {
         dismiss(animated: true)
     }
     
+    deinit {
+        print("DatePopupViewController was de-initialized")
+    }
+    
 }
